@@ -1,0 +1,23 @@
+[project]
+name = "fairness-friend"
+version = "0.0.1"
+description = "Small, structured fairness assessments powered by Fairlearn"
+readme = "README.md"
+authors = [
+    { name = "Linnnnnn", email = "Rev0lve@outlook.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fairlearn>=0.15,<0.16",
+    "numpy>=1.24,<3",
+    "pandas>=2.2,<4",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
